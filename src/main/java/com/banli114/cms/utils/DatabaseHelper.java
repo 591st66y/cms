@@ -146,10 +146,11 @@ import cn.hutool.db.ds.DSFactory;
 			this(dataSource,path,0);
 		}
 		
-		public DatabaseHelper(DataSource dataSource, String path, final int fecthSize) { 
+		public DatabaseHelper(DataSource dataSource, String path, final int fecthSize) {
 			if (dataSource == null) {
 				dataSource = initDataSource();
 				queryRunner = new QueryRunner(dataSource){
+					@Override
 					protected PreparedStatement prepareStatement(Connection conn, String sql)
 				            throws SQLException {
 						PreparedStatement stmt = conn.prepareStatement(sql);
@@ -167,6 +168,7 @@ import cn.hutool.db.ds.DSFactory;
 		if(ds == null){
 			this.dataSource = dataSource;
 			queryRunner = new QueryRunner(dataSource){
+				@Override
 				protected PreparedStatement prepareStatement(Connection conn, String sql)
 			            throws SQLException {
 					PreparedStatement stmt = conn.prepareStatement(sql);
