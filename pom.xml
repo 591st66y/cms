@@ -110,7 +110,12 @@
 			<version>3.3.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
-
+		<!-- 分页插件 -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.2.12</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
