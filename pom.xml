@@ -23,7 +23,7 @@
 		<oshi.version>3.9.1</oshi.version>
 		<fastjson.version>1.2.60</fastjson.version>
 		<oracle.version>10.2.0.4.0</oracle.version>
-		<mysql.version>5.1.48</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<hutool.version>5.0.7</hutool.version>
 		<dbutils.version>1.7</dbutils.version>
 	</properties>
